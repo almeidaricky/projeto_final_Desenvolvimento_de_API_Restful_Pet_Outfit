@@ -17,6 +17,18 @@
 ```
 
 <h1 align="center">🐾 Pet Outfit</h1>
+<<<<<<< HEAD
+=======
+
+<p align="center">
+📌 Projeto acadêmico — **Desenvolvimento de API Restful**  
+🎓 Curso: **Programador de Back-end — Firjan SENAI Maracanã**
+</p>
+
+---
+
+# 🐾 Pet Outfit
+>>>>>>> 65ee3c4 (Corrige sincronização backend e adiciona categoria exóticos)
 
 <p align="center">
 📌 Projeto acadêmico — **Desenvolvimento de API Restful**  
