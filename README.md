@@ -16,7 +16,33 @@
  ╚═════╝  ╚═════╝    ╚═╝   ╚═╝     ╚═╝   ╚═╝ ®
 ```
 
-# 🐾 Pet Outfit
+<h1 align="center">🐾 Pet Outfit</h1>
+
+<p align="center">
+Projeto acadêmico de API REST com Spring Boot<br>
+Curso Programador de Back-end — SENAI Firjan Maracanã
+</p>
+
+```
+██████╗ ███████╗████████╗
+██╔══██╗██╔════╝╚══██╔══╝
+██████╔╝█████╗     ██║
+██╔═══╝ ██╔══╝     ██║
+██║     ███████╗   ██║
+╚═╝     ╚══════╝   ╚═╝
+
+                                     /\____/\
+ ██████╗ ██╗   ██╗████████╗███████╗██╗████████╗
+██╔═══██╗██║   ██║╚══██╔══╝██╔════╝██║╚══██╔══╝
+██║   ██║██║   ██║   ██║   █████╗  ██║   ██║
+██║   ██║██║   ██║   ██║   ██╔══╝  ██║   ██║
+╚██████╔╝╚██████╔╝   ██║   ██║     ██║   ██║
+ ╚═════╝  ╚═════╝    ╚═╝   ╚═╝     ╚═╝   ╚═╝ ®
+```
+
+
+---
+
 
 📌 Projeto acadêmico — **Desenvolvimento de API Restful**  
 🎓 Curso: **Programador de Back-end — Firjan SENAI Maracanã**
