@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Outfit | Boutique para Pets</title>
+  <meta name="description" content="Pet Outfit é uma loja virtual elegante de roupas e acessórios para cães, gatos e coelhos." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">PO</div>
+      <div>
+        <strong>Pet Outfit</strong>
+        <span>butique para pets</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#colecao">Coleção</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <button class="cart-button" id="openCartBtn">
+      Sacola
+      <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <section class="brand-banner">
+    <img src="images/header.jpg" alt="Banner da Pet Outfit" />
+  </section>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Coleção de Inverno • Boutique Pet</span>
+        <h1>Moda sofisticada para cães, gatos e coelhos.</h1>
+        <p>
+          Uma experiência visual suave, elegante e acolhedora para apresentar roupas e acessórios
+          com aparência premium, mantendo o charme e a doçura do universo pet.
+        </p>
+
+        <div class="hero-actions">
+          <a class="primary-btn" href="#colecao">Ver catálogo</a>
+          <a class="secondary-btn" href="#sobre">Conhecer a marca</a>
+        </div>
+
+        <div class="hero-badges">
+          <div><strong>30+ itens</strong><span>catálogo inicial</span></div>
+          <div><strong>API Spring</strong><span>porta 8083</span></div>
+          <div><strong>Design premium</strong><span>clean e delicado</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <article class="hero-card card-1">
+          <img src="images/hero-dog.jpg" alt="Cachorro com roupa elegante" />
+          <div>
+            <span>Destaque</span>
+            <strong>Look urbano</strong>
+          </div>
+        </article>
+
+        <article class="hero-card card-2">
+          <img src="images/hero-cat.jpg" alt="Gato com roupa elegante" />
+          <div>
+            <span>Clássico</span>
+            <strong>Elegância felina</strong>
+          </div>
+        </article>
+
+        <article class="hero-card card-3">
+          <img src="images/hero-rabbit.jpg" alt="Coelho com acessório elegante" />
+          <div>
+            <span>Charmoso</span>
+            <strong>Conforto premium</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat">
+        <strong>4</strong>
+        <span>categorias principais</span>
+      </div>
+      <div class="stat">
+        <strong>30</strong>
+        <span>produtos iniciais</span>
+      </div>
+      <div class="stat">
+        <strong>1</strong>
+        <span>integração com MySQL</span>
+      </div>
+    </section>
+
+    <section class="catalog" id="colecao">
+      <div class="section-head">
+        <span class="eyebrow">Coleção</span>
+        <h2>Catálogo elegante e responsivo</h2>
+        <p>
+          Filtre por categoria, pesquise por nome e veja os produtos em destaque puxados do backend.
+        </p>
+      </div>
+
+      <div class="controls">
+        <input id="searchInput" type="text" placeholder="Pesquisar por nome, tipo de animal ou descrição..." />
+        <div class="chips" id="categoryChips"></div>
+      </div>
+
+      <div class="grid" id="productGrid"></div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="about-text">
+        <span class="eyebrow">Sobre a marca</span>
+        <h2>Um visual chique, delicado e fácil de entender</h2>
+        <p>
+          O front foi pensado para combinar com uma loja pet sofisticada: cores quentes,
+          espaçamento amplo, cartões suaves, animações discretas e foco total nas imagens.
+        </p>
+        <p>
+          Ele conversa com o backend no endereço <strong>http://localhost:8083/api</strong> e
+          carrega categorias e produtos diretamente do MySQL. A linguagem visual foi inspirada de
+          forma simples na estética da
+          <a href="https://outfit.hellohello.is/" target="_blank" rel="noopener noreferrer">outfit.hellohello.is</a>,
+          sem copiar a proposta original.
+        </p>
+      </div>
+
+      <div class="about-panel">
+        <div class="mini-card">
+          <strong>Elegância</strong>
+          <span>layout leve e refinado</span>
+        </div>
+        <div class="mini-card">
+          <strong>Integração</strong>
+          <span>Spring Boot + MySQL</span>
+        </div>
+        <div class="mini-card">
+          <strong>Flexível</strong>
+          <span>exibe apenas cães, gatos e coelhos</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contato">
+    <div>
+      <strong>Pet Outfit</strong>
+      <p>Loja virtual de roupas e acessórios pet, com visual premium.</p>
+    </div>
+    <span>Projeto acadêmico • Front-end em HTML, CSS e JS</span>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <strong>Sacola</strong>
+      <button id="closeCartBtn">Fechar</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total">
+      <span>Total</span>
+      <strong id="cartTotal">R$ 0,00</strong>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModalBtn">×</button>
+      <img id="modalImage" alt="" />
+      <div class="modal-info">
+        <span id="modalCategory" class="eyebrow"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+        <strong id="modalPrice"></strong>
+        <button class="primary-btn modal-action" id="modalAddBtn">Adicionar à sacola</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

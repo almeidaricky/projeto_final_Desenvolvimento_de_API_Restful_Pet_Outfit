@@ -1,0 +1,16 @@
+# Eclipse
+.metadata/
+.classpath
+.project
+.settings/
+
+# Java / Spring
+target/
+*.log
+
+# Node / front
+node_modules/
+
+# Sistema
+.DS_Store
+Thumbs.db
